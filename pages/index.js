@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import Navbar2 from "../components/Navbar2/Navbar2";
-import Hero4 from "../components/hero4/hero4";
+import Navbar from "../components/Navbar/Navbar";
+import Hero from "../components/hero/hero";
 import FunFact from "../components/FunFact";
 import About from "../components/about/about";
 import ServiceSection from "../components/ServiceSection/ServiceSection";
@@ -15,9 +15,9 @@ import Scrollbar from "../components/scrollbar/scrollbar";
 const HomePage = () => {
   return (
     <Fragment>
-      <Navbar2 hclass={"wpo-header-style-3"} topbarNone={"topbar-none"} />
-      <Hero4 />
-      <FunFact fClass={"wpo-fun-fact-section-s2"} />
+      <Navbar hclass={"wpo-header-style-3"} topbarNone={"topbar-none"} />
+      <Hero />
+      <FunFact fClass={"s3"} />
       <About />
       <ServiceSection />
       <ProjectSection />
