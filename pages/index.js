@@ -1,33 +1,33 @@
 import React, { Fragment } from "react";
-import Navbar from "../components/Navbar/Navbar";
-import Hero from "../components/hero/hero";
-import FunFact from "../components/FunFact";
-import About from "../components/about/about";
-import ServiceSection from "../components/ServiceSection/ServiceSection";
-import ProjectSection from "../components/ProjectSection/ProjectSection";
-import Pricing from "../components/Pricing/Pricing";
-import Testimonial from "../components/Testimonial/Testimonial";
-import TeamSection from "../components/TeamSection/TeamSection";
-import BlogSection from "../components/BlogSection/BlogSection";
-import Footer2 from "../components/footer2/Footer2";
+import Navbar2 from "../components/Navbar2/Navbar2";
 import Scrollbar from "../components/scrollbar/scrollbar";
+import Hero4 from "../components/hero4/hero4";
+import About4 from "../components/about4/about4";
+import FunFact from "../components/FunFact";
+import ServiceSection3 from "../components/ServiceSection3/ServiceSection3";
+import ProjectSectionS2 from "../components/ProjectSectionS2/ProjectSectionS2";
+import Pricing from "../components/Pricing/Pricing";
+import Testimonial3 from "../components/Testimonial3/Testimonial3";
+import CtaSection2 from "../components/CtaSection2/CtaSection2";
+import BlogSection2 from "../components/BlogSection2/BlogSection2";
+import Footer from "../components/footer/Footer";
 
-const HomePage = () => {
+const HomePage4 = () => {
   return (
     <Fragment>
-      <Navbar hclass={"wpo-header-style-3"} topbarNone={"topbar-none"} />
-      <Hero />
-      <FunFact fClass={"s3"} />
-      <About />
-      <ServiceSection />
-      <ProjectSection />
-      <Pricing PrClass={"wpo-pricing-section-s2"} />
-      <Testimonial />
-      <TeamSection />
-      <BlogSection />
-      <Footer2 />
+      <Navbar2 />
+      <Hero4 />
+      <FunFact fClass={"wpo-fun-fact-section-s2"} />
+      <About4 abClass={"s2"} />
+      <ServiceSection3 />
+      <ProjectSectionS2 />
+      {/* <Pricing /> */}
+      <Testimonial3 />
+      <CtaSection2 />
+      <BlogSection2 />
+      <Footer />
       <Scrollbar />
     </Fragment>
   );
 };
-export default HomePage;
+export default HomePage4;

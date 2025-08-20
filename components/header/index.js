@@ -59,6 +59,11 @@ const Header = (props) => {
                                                 <li><Link onClick={ClickHandler} href="/home4">Home style 4</Link></li>
                                             </ul> */}
                     </li>
+                    <li>
+                      <Link onClick={ClickHandler} href="/about">
+                        About
+                      </Link>
+                    </li>
                     <li className="menu-item-has-children">
                       <Link onClick={ClickHandler} href="/">
                         Pages
@@ -348,6 +353,15 @@ const Header = (props) => {
                         </form>
                       </div>
                     </div>
+                  </div>
+                  <div className="close-form">
+                    <Link
+                      onClick={ClickHandler}
+                      className="theme-btn"
+                      href="/contact"
+                    >
+                      Make Appointment
+                    </Link>
                   </div>
                 </div>
               </div>
