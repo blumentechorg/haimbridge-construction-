@@ -48,18 +48,24 @@ const Header2 = (props) => {
                       <Link onClick={ClickHandler} href="/">
                         Home
                       </Link>
-                      {/* <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} href="/">Home style 1</Link></li>
-                                                <li><Link onClick={ClickHandler} href="/home2">Home style 2</Link></li>
-                                                <li><Link onClick={ClickHandler} href="/home3">Home style 3</Link></li>
-                                                <li><Link onClick={ClickHandler} href="/home4">Home style 4</Link></li>
-                                            </ul> */}
                     </li>
 
-                    <li>
+                    <li className="menu-item-has-children">
                       <Link onClick={ClickHandler} href="/about">
                         About
                       </Link>
+                      <ul className="sub-menu">
+                        <li>
+                          <Link onClick={ClickHandler} href="/about">
+                            About Us
+                          </Link>
+                        </li>
+                        <li>
+                          <Link onClick={ClickHandler} href="/team">
+                            Team
+                          </Link>
+                        </li>
+                      </ul>
                     </li>
                     <li className="menu-item-has-children">
                       <Link onClick={ClickHandler} href="/">
@@ -141,22 +147,27 @@ const Header2 = (props) => {
                       <ul className="sub-menu">
                         <li>
                           <Link onClick={ClickHandler} href="/project">
-                            Portfolio 1
+                            Projects
                           </Link>
                         </li>
                         <li>
+                          <Link onClick={ClickHandler} href="/team">
+                            Team
+                          </Link>
+                        </li>
+                        {/* <li>
                           <Link onClick={ClickHandler} href="/project-2">
                             Portfolio 2
                           </Link>
-                        </li>
-                        <li>
+                        </li> */}
+                        {/* <li>
                           <Link
                             onClick={ClickHandler}
                             href="/project/Furniture-&-Decor"
                           >
                             Portfolio Single
                           </Link>
-                        </li>
+                        </li> */}
                       </ul>
                     </li>
                     <li className="menu-item-has-children">
@@ -261,7 +272,7 @@ const Header2 = (props) => {
                     </div>
                     <div className="info-text">
                       <span>Call Us:</span>
-                      <p>+(684) 555-0102</p>
+                      <p>+(234) 816-476-8989</p>
                     </div>
                   </div>
                   <div className="contact-info">
@@ -270,7 +281,7 @@ const Header2 = (props) => {
                     </div>
                     <div className="info-text">
                       <span>E-mail Now:</span>
-                      <p>demoArkitek@gmail.com</p>
+                      <p>info@haimbridge.com</p>
                     </div>
                   </div>
                   <div className="close-form">

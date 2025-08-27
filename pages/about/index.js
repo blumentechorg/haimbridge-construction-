@@ -19,6 +19,7 @@ const AboutPage = () => {
       <ProjectSectionS2 prClass={"section-padding"} />
       <CtaSection2 />
       <BlogSection2 />
+
       <Footer />
       <Scrollbar />
     </Fragment>

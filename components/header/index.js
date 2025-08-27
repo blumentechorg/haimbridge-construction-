@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import { removeFromCart } from "../../store/actions/action";
 import Logo from "/public/images/logo.svg";
 import Image from "next/image";
+import HeaderTopbar from "../HeaderTopbar";
 
 const Header = (props) => {
   const [menuActive, setMenuState] = useState(false);
@@ -23,6 +24,7 @@ const Header = (props) => {
 
   return (
     <header id="header" className={props.topbarClass}>
+      <HeaderTopbar />
       <div className={`wpo-site-header ${props.hclass}`}>
         <nav className="navigation navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
@@ -52,17 +54,23 @@ const Header = (props) => {
                       <Link onClick={ClickHandler} href="/">
                         Home
                       </Link>
-                      {/* <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} href="/">Home style 1</Link></li>
-                                                <li><Link onClick={ClickHandler} href="/home2">Home style 2</Link></li>
-                                                <li><Link onClick={ClickHandler} href="/home3">Home style 3</Link></li>
-                                                <li><Link onClick={ClickHandler} href="/home4">Home style 4</Link></li>
-                                            </ul> */}
                     </li>
-                    <li>
+                    <li className="menu-item-has-children">
                       <Link onClick={ClickHandler} href="/about">
                         About
                       </Link>
+                      <ul className="sub-menu">
+                        <li>
+                          <Link onClick={ClickHandler} href="/about">
+                            About Us
+                          </Link>
+                        </li>
+                        <li>
+                          <Link onClick={ClickHandler} href="/team">
+                            Team
+                          </Link>
+                        </li>
+                      </ul>
                     </li>
                     <li className="menu-item-has-children">
                       <Link onClick={ClickHandler} href="/">
